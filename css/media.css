@@ -1,0 +1,55 @@
+@media (max-width: 1200px) {
+    .nav-right,.nav-center {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .overlay-content h1 {
+        font-size: 4rem;
+        padding: 1rem 5rem;
+    }
+
+    .arrows {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay-content h1 {
+        padding: 1rem 2rem;
+    }
+
+    .order {
+        gap: 0.8rem;
+    }
+
+    .order a {
+        padding: 0.25rem 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        background-color: transparent;
+    }
+    .nav-left img {
+        padding-left: 0.5rem;
+    }
+    .display {
+        margin-top: 0;
+    }
+
+    .overlay-content {
+        margin-top: 1rem;
+    }
+
+    .overlay-content h1 {
+        font-size: 2.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .overlay-content a {
+        font-size: 1rem;
+    }
+}

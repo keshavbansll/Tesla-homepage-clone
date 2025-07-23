@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electric Card, Solar & Clean Energy | Tesla</title>
+    <title>Electric Cars, Solar & Clean Energy | Tesla</title>
     <link rel="icon" href="assets/images/Logo.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -24,7 +25,7 @@
     <section class="nav">
       <div class="nav-left">
         <a href="index.html"
-          ><img src="assets/images/text-logo.png" alt=""
+          ><img src="assets/images/text-logo.png" alt="Tesla Logo" class="logo"
         /></a>
       </div>
       <div class="nav-center">
@@ -54,12 +55,16 @@
     <div class="display">
       <div class="overlay-content">
         <h1>$7,500 Federal Tax Credit Ending</h1>
-        <a href="https://www.tesla.com/inventory/new"
+        <a href="https://www.tesla.com/inventory/new" class="display-link"
           >Limited Inventory - Take Delivery Now</a
         >
         <div class="order">
-          <a href="https://www.tesla.com/model3/design">Order Model 3</a>
-          <a href="https://www.tesla.com/modely/design">Order Model Y</a>
+          <a href="https://www.tesla.com/model3/design" class="Model-3"
+            >Order Model 3</a
+          >
+          <a href="https://www.tesla.com/modely/design" class="Model-Y"
+            >Order Model Y</a
+          >
         </div>
       </div>
 
@@ -71,10 +76,41 @@
           <i class="fa-solid fa-greater-than"></i>
         </a>
       </div>
-
-      <div class="bg-img">
-        <img src="assets/images/Display 1.avif" alt="Display 1" />
+      <img
+        src="assets/images/Display 1.avif"
+        alt="Display Image 1"
+        class="display-img"
+        style="height: 75vh"
+      />
+    </div>
+    <div class="featured">
+      <div class="featured-card">
+        <div class="featured-info">
+          <h2>Current Offers</h2>
+          <p>Limited inventory. Take delivery today.</p>
+          <a href="https://www.tesla.com/current-offers" class="featured-btn"
+            >Learn More</a
+          >
+        </div>
+        <div class="featured-img">
+          <img src="assets/images/featuerd-img-1.avif" alt="Current Offers" />
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-info">
+          <h2>New Feature: In-Car AI</h2>
+          <p>Grok is now available.</p>
+          <a
+            href="https://www.tesla.com/support/articles/grok"
+            class="featured-btn"
+            >Learn More</a
+          >
+        </div>
+        <div class="featured-img">
+          <img src="assets/images/Grok.png" alt="Current Offers" />
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
