@@ -3,6 +3,8 @@ let displayHeading = document.querySelector(".overlay-content h1");
 let displayLink = document.querySelector(".display-link");
 let orderModel3 = document.querySelector(".Model-3");
 let orderModelY = document.querySelector(".Model-Y");
+let leftCircle = document.querySelector(".left-circle");
+let rightCircle = document.querySelector(".right-circle");
 
 let toggle = false;
 
@@ -24,13 +26,28 @@ setInterval(() => {
     displayLink.style.textDecoration = toggle ? "underline" : "none";
 
     orderModel3.innerText = toggle ? "Order Model 3" : "Order Now";
-    orderModelY.innerText = toggle ? "Order Model Y" : "View Inventory";
-    orderModelY.href = toggle
-      ? "https://www.tesla.com/modely/design"
-      : "https://www.tesla.com/inventory/new/m3";
-    orderModelY.classList.toggle("view-inventory", !toggle);
+
+    if (toggle) {
+      orderModelY.innerText = "Order Model Y";
+      orderModelY.href = "https://www.tesla.com/modely/design";
+      orderModelY.classList.add("Model-Y");
+      orderModelY.classList.remove("view-inventory");
+    } else {
+      orderModelY.innerText = "View Inventory";
+      orderModelY.href = "https://www.tesla.com/inventory/new/m3";
+      orderModelY.classList.add("view-inventory");
+      orderModelY.classList.remove("Model-Y");
+    }
+
+    if (toggle) {
+      leftCircle.classList.remove("circle-opacity");
+      rightCircle.classList.add("circle-opacity");
+    } else {
+      leftCircle.classList.add("circle-opacity");
+      rightCircle.classList.remove("circle-opacity");
+    }
 
     display1.classList.remove("fade-out");
     toggle = !toggle; //Toggle the image source
   }, 400);
-}, 8000);
+}, 4000);

@@ -86,7 +86,7 @@
 
 .display {
     margin-top: 60px;
-    height: 80vh;
+    height: 75vh;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -135,6 +135,31 @@
 }
 
 .arrows a {
+    cursor: pointer;
+}
+
+.circles {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    z-index: 999;
+}
+
+.circles i {
+    font-size: 0.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.circle-opacity{
+    opacity: 0.5;
+}
+
+.circles a {
     cursor: pointer;
 }
 
@@ -206,19 +231,29 @@
     border: #fff solid 3px;
 }
 
-.overlay-content .order a:hover {
+.overlay-content .Model-3:hover, .overlay-content .Model-Y:hover {
     text-decoration: none;
     background-color: #2E4AB1;
+    border-color: #2E4AB1;
+}
+
+.order .view-inventory:hover {
+    background-color: #eee;
+    text-decoration: none;
+    color: #393C41;
+    border-color: #eee;
 }
 
 .featured {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     padding: 0 1rem 2rem 1rem;
 }
 
 .featured-card {
+    margin-top: 2rem;
     display: flex;
     background-color: #f4f4f4;
     border-radius: 12px;
@@ -277,4 +312,97 @@
     width: 70%;
     object-fit: cover;
     border-radius: 0px 12px 12px 0 ;
+}
+
+.featured-video {
+    margin-top: 2rem;
+    display: flex;
+    position: relative;
+    border-radius: 12px;
+    width: 65%;;
+    align-items: stretch;
+    overflow: hidden;
+    height: 42rem
+}
+
+.bg-video {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured-video-info {
+    padding-left: 2rem;
+    position: relative;
+    align-self: flex-end;
+    color: #fff;
+    font-size: 2.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.video-btns{
+    padding:1rem 0 1rem 0rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+.featured-video a , .image-btns a {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    background-color: #fff;
+    color: #393c41;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.video-btns .video-btn, .image-btns a{
+    text-decoration: none;
+    background-color: #3E6AE1;
+    color: #fff;
+}
+
+.video-btns .video-btn:hover, .image-btns a:hover {
+    background-color: #2E4AB1;
+}
+
+.featured-video a:hover {
+    background-color: #eee;
+}
+
+.image-card {
+    margin-top: 2rem;
+    display: flex;
+    position: relative;
+    border-radius: 12px;
+    width: 30%;
+    align-items: stretch;
+    overflow: hidden;
+    height: 42rem
+}
+
+.image-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-card-info {
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    position: relative;
+    align-self: flex-end;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.image-btns {
+    margin-bottom: 1rem;
 }
