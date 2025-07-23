@@ -25,7 +25,7 @@ nav img {
     padding-left: 2rem;
 }
 
-nav-center{
+.nav-center{
     display: flex;
     align-items: center;
     height: 100%;
@@ -51,17 +51,17 @@ nav-center{
     background-color: rgba(0,0,0,0.1);
 }
 
-nav-right {
+.nav-right {
     display: flex;
     gap: 15px;
     padding-right: 1.5rem;
 }
 
-nav-right a{
+.nav-right a{
     align-content: center;
 }
 
-nav-right > a > i {
+.nav-right > a > i {
     width: 25px;
     height: 25px;
     text-align: center;
@@ -74,11 +74,11 @@ nav-right > a > i {
     transition: all 0.1s ease-in-out;
 }
 
-nav-right > a > i:hover {
+.nav-right > a > i:hover {
     background-color: rgba(0,0,0,0.1);
 }
 
-nav-right > .lang > i{
+.nav-right > .lang > i{
     border: none;
     font-size: 1.2em;
     padding: 0;
@@ -282,7 +282,6 @@ nav-right > .lang > i{
 }
 
 .featured-btn {
-    display: inline-block;
     width: 70%;
     padding: 0.75rem 2rem;
     background-color: #fff;
@@ -406,4 +405,72 @@ nav-right > .lang > i{
 
 .image-btns {
     margin-bottom: 1rem;
+}
+
+.charge{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.charge-info h1, .charge-stats h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.charge-info p, .charge-stats p {
+    font-size: 1.5rem;
+}
+
+.charge-btn{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.black-btn{
+    padding: 0.5rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.black-btn:hover {
+    background-color: #393C41;
+    color: #fff;
+}
+
+.white-btn{
+    padding: 0.5rem 1.5rem;
+    background-color: #f4f4f4;
+    color: #393C41;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.white-btn:hover {
+    background-color: #eee;
+    color: #393C41;
+}
+
+.charge-stats{
+    display: flex;
+    gap: 2rem;
+}
+
+.red-charge, .grey-plug{
+    scale: 2;
 }
