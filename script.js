@@ -94,3 +94,18 @@ rightArrow.addEventListener("click", (e) => {
     manualToggle(false);
   }
 });
+
+let videoControl = document.querySelector(".video-control i");
+let video = document.querySelector(".bg-video");
+
+videoControl.addEventListener("click", function () {
+  if (video.paused) {
+    video.play();
+    videoControl.classList.remove("fa-play");
+    videoControl.classList.add("fa-pause");
+  } else {
+    video.pause();
+    videoControl.classList.add("fa-play");
+    videoControl.classList.remove("fa-pause");
+  }
+});
