@@ -163,6 +163,21 @@ nav img {
     cursor: pointer;
 }
 
+.left-circle, .right-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.left-circle i, .right-circle i {
+    pointer-events: none;
+}
+
 .overlay-content {
     position: relative;
     top: 2rem;
@@ -292,7 +307,7 @@ nav img {
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    transition: background 0.2s;
+    transition: all 0.4s ease-in-out;
 }
 
 .featured-btn:hover {
@@ -357,13 +372,14 @@ nav img {
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    transition: background 0.2s;
+    transition: all 0.4s ease-in-out;
 }
 
 .video-btns .video-btn, .image-btns a{
     text-decoration: none;
     background-color: #3E6AE1;
     color: #fff;
+    transition: all 0.4s ease-in-out;
 }
 
 .video-btns .video-btn:hover, .image-btns a:hover {
@@ -409,8 +425,9 @@ nav img {
 
 .charge{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 3rem;
+    margin: 0 4rem;
     margin-bottom: 2rem;
     padding: 1rem;
 }
@@ -440,7 +457,7 @@ nav img {
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    transition: background 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .black-btn:hover {
@@ -458,7 +475,7 @@ nav img {
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    transition: background 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 .white-btn:hover {
@@ -473,4 +490,35 @@ nav img {
 
 .red-charge, .grey-plug{
     scale: 2;
+}
+
+.price-info {
+    margin: 0 10rem 4rem 10rem
+}
+
+.price-info p {
+    font-size:0.8rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #000;
+    font-weight: 600;
 }
